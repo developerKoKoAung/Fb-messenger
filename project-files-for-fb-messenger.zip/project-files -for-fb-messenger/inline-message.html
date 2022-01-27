@@ -1,0 +1,19 @@
+<!-- RECENT-MESSAGE -->
+<li id="recent" data-user="USERID" class="fb-li-active overflow-hidden flex select-none items-center cursor-pointer rounded-lg p-3"><a class="flex-1" href="<?php echo BASE_URL?>'+data.username+'/messages"><div class="flex-1 flex"><div class="flex relative gap-x-2 items-center flex-1 flex-wrap "><div><img class="w-12 h-12 object-cover border-gray-400 border rounded-full" src="<?php echo BASE_URL?>'+data.profileImage+'"></div><div class="flex overflow-hidden flex-wrap"><div class="mx-auto"><div class="text-gray-800"><span  style="font-size: .9375rem;">USERNAME</span></div><div class="text-gray-500 text-xs mx-auto"><span class="text-xs">MESSAGE</span></div></div><div class="time-stamp text-gray-500 text-xs self-end mx-1 mx-auto"><span class="self-start tracking-wide pl-2">TIME</span></div></div><span id="badge" class="fb-color absolute right-1"><i class="fas fa-circle"></i></span></div></div></a></li>
+
+
+<!--new-message -->
+<div class="message flex w-full"><div class="flex items-end"><div class="px-1 py-1"><img class="w-8 h-8 object-cover border-gray-400 border rounded-full" src="PROFILE-IMAGE"/></div><div class="flex items-center max-w-xs">MESSAGE</div><div class="flex self-center hover:flex"><div><ul class="flex gap-x-1 text-gray-400 text-sm flex-row-reverse hidden"><li class="leading-6 hover:bg-gray-100 text-center rounded-full w-6 h-6 cursor-pointer"><span><i class="fas fa-ellipsis-v"></i></span></li><li class="leading-6 hover:bg-gray-100 text-center rounded-full w-6 h-6 cursor-pointer"><span><i class="p-1 fas fa-reply"></i></span></li><li class="leading-6 hover:bg-gray-100 text-center rounded-full w-6 h-6 cursor-pointer"><span><i class="p-1 far fa-smile"></i></span></li></ul></div></div></div></div>
+
+//IMAGE
+<div class="message flex w-full h-auto justify-end"><div class="flex flex-row-reverse"><div class="flex items-center"><img class="m-2 min-w-4 max-w-xs rounded-3xl" src="'+data.message+'"/></div><div class="flex items-center"><div><ul class="flex gap-x-1 text-gray-400 text-sm hidden"><li class="leading-6 hover:bg-gray-100 text-center rounded-full w-6 h-6 cursor-pointer"><span><i class="fas fa-ellipsis-v"></i></span></li></ul></div></div></div></div>
+
+//send message
+<div class="message flex w-full h-auto justify-end"><div class="flex flex-row-reverse"><div class="flex items-center"><span class="fb-bg text-white py-2 px-4 m-1 rounded-full text-sm">MESSAGE</span></div><div class="flex items-center"><div><ul class="flex gap-x-1 text-gray-400 text-sm hidden"><li class="leading-6 hover:bg-gray-100 text-center rounded-full w-6 h-6 cursor-pointer"><span><i class="fas fa-ellipsis-v"></i></span></li><li class="leading-6 hover:bg-gray-100 text-center rounded-full w-6 h-6 cursor-pointer"><span><i class="p-1 fas fa-reply"></i></span></li><li class="leading-6 hover:bg-gray-100 text-center rounded-full w-6 h-6 cursor-pointer"><span><i class="p-1 far fa-smile"></i></span></li></ul></div></div></div></div>
+
+
+//Image tag
+<img class="m-2 min-w-4 max-w-xs rounded-3xl" src="IMAGE"/>
+
+//message span 
+<span class="rounded-2xl bg-gray-200 text-gray-800 text-white py-2 px-4 m-1 rounded-full text-sm">MESSAGE</span>
