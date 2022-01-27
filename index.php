@@ -1,6 +1,8 @@
 <?php
     include 'core/init.php';
-
+    if($userObj->isLoggedIn()){
+        $userObj->redirect('home.php');
+    }
     if($_SERVER["REQUEST_METHOD"] === "POST"){
         if(isset($_POST)){
             $email    = trim( stripcslashes( htmlentities($_POST['email'], ENT_QUOTES ) ) );
@@ -11,6 +13,12 @@
                 }else{
                     if($user = $userObj->emailExist($email)){
                         var_dump($user);
+                        if(password_verify($password, $user->password)){
+                            $_SESSION['user_id']= $user->userId;
+                            $userObj->redirect('home.php');
+                        }else{
+                            $error = "Your email or password is incorrect";
+                        }
                     }
                     else{
                         $error = "No accounts belong to this email";

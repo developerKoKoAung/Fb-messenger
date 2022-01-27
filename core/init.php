@@ -7,4 +7,3 @@ require 'classes/Messenger.php';
 $userObj = new User;
 
 define("BASE_URL", "http://localhost/Escapse/socket/fb-messenger/");
-
